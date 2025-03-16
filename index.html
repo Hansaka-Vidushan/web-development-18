@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project 18</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <header>Web Project 18</header>
+
+    <div id="circle"></div>
+
+
+
+
+
+    <script>
+        //Animate for circle
+        $("#circle").click(function () {
+            $(this).animate({
+
+                width: "250px",
+                height: "250px",
+
+            },
+
+                //Add Dealy
+                2000,
+                //Color Change
+                function () {
+
+
+                    $(this).css("background-color", "red");
+                }
+
+
+
+            );
+
+
+        });
+
+
+        //Create a String finder
+        let legex001 = /l/ig;
+
+        let text = "Sri lanka is beautiful  country";
+
+        let result = text.match(legex001);
+
+        alert(result + "\nCount = " + result.length + "/" + text.length);
+
+
+    </script>
+
+</body>
+
+</html>
